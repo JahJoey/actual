@@ -72,7 +72,6 @@ export function TransactionList({
   showReconciled,
   showCleared,
   showAccount,
-  headerContent,
   isAdding,
   isNew,
   isMatched,
@@ -221,7 +220,6 @@ export function TransactionList({
       dateFormat={dateFormat}
       hideFraction={hideFraction}
       addNotification={addNotification}
-      headerContent={headerContent}
       renderEmpty={renderEmpty}
       onSave={onSave}
       onApplyRules={onApplyRules}
