@@ -38,7 +38,7 @@ export function ScrollProvider<T extends Element>({
 
   const hasScrolledToBottom = useCallback(
     (tolerance = 1) => {
-      if (scrollHeight && scrollY && clientHeight) {
+      if (scrollHeight != null && scrollY != null && clientHeight != null) {
         return scrollHeight - scrollY <= clientHeight + tolerance;
       }
       return false;
